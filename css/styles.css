@@ -6,7 +6,7 @@
 
 .row-content
 {
-    margin: 40px 0px auto;
+    margin: 4gi0px 0px auto;
     padding: 0px auto;
     border-bottom: 1px ridge;
     min-height: 400px; 
@@ -24,6 +24,16 @@
     background: #9575CD;
     color:floralwhite;
 
+}
+body
+{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark
+{
+    background-color: #512DA8; 
 }
 
 .address
