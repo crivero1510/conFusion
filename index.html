@@ -42,7 +42,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="aLogin">
                         <span class="fa fa-sign-in">
                         </span>Login
                     </a>
@@ -98,10 +98,10 @@
                         <div class="form-group row">
                             <label for="date" class="col-12 col-md-2 col-form-label">Section</label>
                             <div class=" col sm-6 btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-danger active">
+                                <label class="btn btn-success active">
                                     <input type="radio" name="options" id="optNonSmokingArea" autocomplete="off" checked> Non-Smoking
                                 </label>
-                                <label class="btn btn-success">
+                                <label class="btn btn-danger">
                                     <input type="radio" name="options" id="opSmokingArea" autocomplete="off"> Smoking
                                 </label>
                             </div>
@@ -174,7 +174,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-sm btn-block" href="#formReserve" data-toggle="modal" data-target="#reservationModal">Reserve Table</a>
+                    <a class="btn btn-warning btn-sm btn-block" href="#formReserve" id="aReserveTable">Reserve Table</a>
                 </div>
 
             </div>
@@ -364,28 +364,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#mycarousel").carousel({ interval: 2000 });
-               
-                $('#carouselButton').click(function () {
-                    if($('#carouselButton').children('span').hasClass('fa-pause'))
-                    {
-                        $('#myCarousel').carousel('pause');
-                        $('#carouselButton').children('span').removeClass('fa-pause');
-                        $('#carouselButton').children('span').addClass('fa-play');
-                    }
-                    else if($('#carouselButton').children('span').hasClass('fa-play'))
-                    {
-                        $('#myCarousel').carousel('cycle');
-                        $('#carouselButton').children('span').removeClass('fa-play');
-                        $('#carouselButton').children('span').addClass('fa-pause');
-                    }
-                    
-                });
-               
-            });
-        </script>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>
